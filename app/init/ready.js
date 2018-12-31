@@ -1,10 +1,9 @@
-const Discord = require('discord.js')
-const client = new Discord.Client()
+module.exports = (client, bot) => {
+	client.on('ready', () => {
+		client.user.setUsername(bot.name)
+		// client.user.setAvatar(bot.avatar)
 
-client.on('ready', () => {
-	client.user.setUsername(config.bot.name)
-	client.user.setAvatar(config.bot.avatar)
-
-	console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`)
-	client.user.setActivity(`Serving ${client.guilds.size} servers`)
-})
+		console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`)
+		client.user.setActivity(`S’occupe de ${client.guilds.size} canaux`)
+	})
+}

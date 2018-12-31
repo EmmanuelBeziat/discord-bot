@@ -4,7 +4,7 @@
 	"description": "A discord bot… For research purpose.",
 	"main": "app/index.js",
 	"scripts": {
-		"start": "node app/index.js",
+		"start": "nodemon app/index.js",
 		"deploy": "pm2 app/index.js --name 'discord-bot'"
 	},
 	"repository": {
@@ -23,6 +23,7 @@
 	"homepage": "https://github.com/EmmanuelBeziat/discord-bot#readme",
 	"devDependencies": {
 		"discord.js": "^11.4.2",
+		"nodemon": "^1.18.9",
 		"pm2": "^3.2.4",
 		"yaml-reader": "^0.4.0"
 	}
