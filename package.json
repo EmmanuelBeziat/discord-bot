@@ -1,0 +1,29 @@
+{
+	"name": "discord-bot",
+	"version": "0.1.0",
+	"description": "A discord bot… For research purpose.",
+	"main": "app/index.js",
+	"scripts": {
+		"start": "node app/index.js",
+		"deploy": "pm2 app/index.js --name 'discord-bot'"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/EmmanuelBeziat/discord-bot.git"
+	},
+	"keywords": [
+		"discord-js",
+		"discord-api"
+	],
+	"author": "\"Emmanuel Béziat <contact@emmanuelbeziat.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/EmmanuelBeziat/discord-bot/issues"
+	},
+	"homepage": "https://github.com/EmmanuelBeziat/discord-bot#readme",
+	"devDependencies": {
+		"discord.js": "^11.4.2",
+		"pm2": "^3.2.4",
+		"yaml-reader": "^0.4.0"
+	}
+}

@@ -1,0 +1,8 @@
+app:
+  port: '3040'
+  url: 'http://localhost:3040'
+bot:
+  token: 'NTI4MDY5NDIwODQ1NzYwNTEz.Dwc7Fg.NaIrjJlhf9oDR585YqHC006MAAY'
+  prefix: '!'
+  name: 'Sebastian Castellano'
+  avatar: 'dist/avatar.png'
