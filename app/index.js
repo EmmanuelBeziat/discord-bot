@@ -7,6 +7,7 @@ require('./init/ready')(client, config.bot)
 
 // Events
 require('./events/messages')(client, config.bot)
+require('./events/user')(client, config.bot)
 
 // Log bot
 client.login(config.bot.token).catch(console.error)

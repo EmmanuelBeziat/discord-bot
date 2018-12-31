@@ -1,3 +1,5 @@
-const Discord = require('discord.js')
-const client = new Discord.Client()
-
+module.exports = (client, bot) => {
+	client.on('presenceUpdate', (oldMember, newMember) => {
+		console.log(oldMember.presence.game, newMember.presence.game)
+	})
+}
