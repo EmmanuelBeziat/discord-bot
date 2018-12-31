@@ -6,7 +6,7 @@ module.exports = class Test extends Command {
 	}
 
 	static async action (client, message) {
-		const m = await message.channel.send('Ping?')
-		return m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`)
+		const m = await message.channel.send('Ping ?')
+		return m.edit(`Pong ! \nLatence : ${m.createdTimestamp - message.createdTimestamp}ms. \nLatence de l’API : ${Math.round(client.ping)}ms`)
 	}
 }
